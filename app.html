@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Download Lone Star Scratch Buddy</title>
+    <script>
+        function redirect() {
+            var userAgent = navigator.userAgent || navigator.vendor;
+            
+            // iOS detection
+            if (/iPad|iPhone|iPod/.test(userAgent)) {
+                window.location.href = "https://apps.apple.com/app/id6504388224";
+            }
+            // Android detection
+            else if (/android/i.test(userAgent)) {
+                window.location.href = "https://play.google.com/store/apps/details?id=com.lottolabs.lonestarscratchbuddy";
+            }
+            // Desktop or unknown - default to Apple
+            else {
+                window.location.href = "https://apps.apple.com/app/id6504388224";
+            }
+        }
+        redirect();
+    </script>
+</head>
+<body>
+    <p>Redirecting to app store...</p>
+</body>
+</html>
