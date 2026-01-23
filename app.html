@@ -1,29 +1,25 @@
-
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Download Lone Star Scratch Buddy</title>
-    <script>
-        function redirect() {
-            var userAgent = navigator.userAgent || navigator.vendor;
-            
-            // iOS detection
-            if (/iPad|iPhone|iPod/.test(userAgent)) {
-                window.location.href = "https://apps.apple.com/app/id6753020941";
-            }
-            // Android detection
-            else if (/android/i.test(userAgent)) {
-                window.location.href = "https://play.google.com/store/apps/details?id=com.lottolabs.lonestarscratchbuddy";
-            }
-            // Desktop or unknown - default to Apple
-            else {
-                window.location.href = "https://apps.apple.com/app/id6753020941";
-            }
-        }
-        redirect();
-    </script>
+    <title>Lone Star Scratch Buddy</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        body { font-family: Arial, sans-serif; text-align: center; padding: 40px 20px; background: #0C264E; color: white; }
+        h1 { font-size: 28px; margin-bottom: 10px; }
+        p { font-size: 18px; margin-bottom: 30px; }
+        .store-badge { width: 180px; margin: 15px; }
+    </style>
 </head>
 <body>
-    <p>Redirecting to app store...</p>
+    <h1>Lone Star Scratch Buddy</h1>
+    <p>Know Before You Scratch</p>
+    
+    <a href="https://apps.apple.com/us/app/lone-star-scratch-buddy/id6753020941">
+        <img class="store-badge" src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on App Store">
+    </a>
+    <br>
+    <a href="https://play.google.com/store/apps/details?id=com.lottolabs.lonestarscratchbuddy">
+        <img class="store-badge" src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Get it on Google Play">
+    </a>
 </body>
 </html>
